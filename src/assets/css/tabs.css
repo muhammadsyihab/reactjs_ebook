@@ -1,0 +1,72 @@
+/* tabs.css */
+
+/* Reset default styles */
+ul.tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul.tabs li {
+  display: inline-block;
+}
+
+/* Tab styles */
+ul.tabs li a {
+  display: block;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+ul.tabs li a:hover {
+  background-color: #ccc;
+}
+
+ul.tabs li.active a {
+  background-color: #fff;
+  color: #333;
+  border-bottom-color: transparent;
+}
+
+/* Tab content styles */
+.tab-content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: -1px;
+  align-items: center;
+  text-align: center; /* Tambahkan properti text-align: center; untuk mengatur konten menjadi tengah secara horizontal */
+}
+
+.tabs .MuiTabs-root {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  ul.tabs li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  ul.tabs li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  ul.tabs li a {
+    font-size: 12px;
+  }
+}
